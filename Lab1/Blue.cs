@@ -39,7 +39,10 @@ namespace Lab1
         public bool Task3(int a, int b)
         {
             bool answer = false;
-
+            if (b == 0)
+            {
+                answer = false;
+            }
             // code here
             if (a % b != 0)
             {
@@ -175,3 +178,4 @@ namespace Lab1
         }
     }
 }
+
