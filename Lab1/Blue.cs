@@ -39,18 +39,19 @@ namespace Lab1
         public bool Task3(int a, int b)
         {
             bool answer = false;
-            if (b == 0)
-            {
-                answer = false;
-            }
+
             // code here
-            if (a % b != 0)
+            if (b == 0)
             {
                 answer = true;
             }
-            else
+            else if (a % b != 0)
             {
                 answer = false;
+            }
+            else
+            {
+                answer = true;
             }
             // end
 
@@ -83,7 +84,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (x < 0)
+            if (x <= -1)
             {
                 answer = 0;
             }
@@ -178,4 +179,3 @@ namespace Lab1
         }
     }
 }
-
