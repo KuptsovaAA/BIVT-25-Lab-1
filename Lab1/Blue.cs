@@ -43,15 +43,18 @@ namespace Lab1
             // code here
             if (b == 0)
             {
-                answer = true;
-            }
-            else if (a % b != 0)
-            {
                 answer = false;
             }
             else
             {
-                answer = true;
+                if (a % b == 0)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    answer = false;
+                }
             }
             // end
 
@@ -125,15 +128,19 @@ namespace Lab1
             int answer = 0;
 
             // code here
-            if (Math.Abs(d) < Math.Abs(f)){
+            if (Math.Abs(d) < Math.Abs(f))
+            {
                 if (d > 0)
                 {
-                    answer -= 1;
+                    answer = -1;
                 }
                 else
                 {
                     return answer;
                 }
+            }
+            if (Math.Abs(d) > Math.Abs(f))
+            {
                 if (f > 0)
                 {
                     answer = 1;
